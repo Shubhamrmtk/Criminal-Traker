@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">
+    Home
+  </div>
+  <div class="card-body">
+    <google-map height="500px"
+    width="100%"
+    [zoom]="zoom"
+
+    [options]="options"></google-map>
+    <button (click)="zoomIn()">Zoom in</button>
+    <button (click)="zoomOut()">Zoom out</button>
+  </div>
+</div>

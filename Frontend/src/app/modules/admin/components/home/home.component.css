@@ -1,0 +1,10 @@
+.card{
+  height: 100%;
+}
+.card-body{
+  height: 100%;
+}
+.card-header{
+  background-color:#1F305E;
+  color: white;
+}

@@ -1,0 +1,37 @@
+<div class="card main-card">
+  <div class="card-header">
+    Dashboard
+  </div>
+  <div class="card-body">
+    <div class="d-flex justify-content-end">
+      <button mat-button>
+        <mat-icon> add </mat-icon> Add Criminal
+
+      </button>
+          <button mat-button><mat-icon>autorenew</mat-icon>Refresh</button>
+    </div>
+    <div class="card">
+      <table class="table" *ngIf="crinaArray.length">
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Sentece</th>
+            <th scope="col">Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of crinaArray">
+            <td>{{item.firstName}}</td>
+             <td>{{item.lastName}}</td>
+            <td>{{item.age}}</td>
+            <td>{{item.sentence}}</td>
+            <td>{{item.gender}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
